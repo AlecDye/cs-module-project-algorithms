@@ -4,7 +4,7 @@ Returns: an integer
 """
 
 
-def eating_cookies(n):
+def eating_cookies(n, cache=None):
     # Your code here
 
     # cases for eating 1, 2, or 3 cookies at a time
@@ -19,6 +19,9 @@ def eating_cookies(n):
         return eating_cookies(n - 1) + eating_cookies(n - 2) + eating_cookies(n - 3)
 
     # test throws error, expecting a 2nd argument in the parameters?
+
+    # optimize:
+    # caching (watch lecture again)
 
 
 if __name__ == "__main__":

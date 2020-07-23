@@ -19,6 +19,9 @@ def moving_zeroes(arr):
 
     return arr
 
+    # optimize:
+    # switch order without removing / appending
+
 
 if __name__ == "__main__":
     # Use the main function here to test out your implementation

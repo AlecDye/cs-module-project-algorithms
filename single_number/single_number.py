@@ -25,6 +25,9 @@ def single_number(arr):
 
     # error: int object is not iterable -> loop runs on arr not len(arr)
 
+    # optimize:
+    # arr.count(num) -> don't need separate list
+
 
 if __name__ == "__main__":
     # Use the main function to test your implementation

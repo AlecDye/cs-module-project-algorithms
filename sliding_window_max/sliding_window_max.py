@@ -11,17 +11,20 @@ def sliding_window_max(nums, k):
     # find the largest value within those 3 values
     # return array with largests values from each loop
 
-    max_values = []
+    max_values = []  # dependant on size nums - O(n)
 
-    window = [0] * k
+    window = [0] * k  # dependant on size k - O(n)
 
-    for items in range(0, len(nums) - k + 1):
+    for items in range(0, len(nums) - k + 1):  # O(n)
         # nums list at position items initialized at to items + k
-        window = nums[items : items + k]
+        window = nums[items : items + k]  # O(1)
         # max built in will select the desired largest values
-        max_values.append(max(window))
+        max_values.append(max(window))  # O(k)
 
     return max_values
+
+    # O(n) (built ins count as O(1))
+    # space complexity: O(2n) - O(n)
 
 
 if __name__ == "__main__":
